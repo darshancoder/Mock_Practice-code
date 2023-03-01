@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Pratice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto:wght@300&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      h1 {
+        text-align: center;
+        background-color: rgb(70, 70, 152);
+        color: white;
+      }
+      #table-2,
+      #table-1 {
+        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+      }
+      #table-3 {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+      }
+      #table-4 {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+      }
+      .heading-1 {
+        background: rgb(52, 132, 32);
+        color: white;
+      }
+
+      #table-4 tr:nth-child(even) {
+        background-color: #e4ffb7;
+      }
+      #table-4 tr:nth-child(odd) {
+        background-color: #efffd2;
+      }
+      #table-5 {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+      }
+
+      .heading-2 {
+        background: rgb(52, 132, 32);
+        color: white;
+      }
+      #table-5 td:nth-child(even) {
+        background-color: #e4ffb7;
+      }
+      #table-5 td:nth-child(odd) {
+        background-color: #efffd2;
+      }
+      #table-5 tr:first-child td {
+        text-align: center;
+        font-weight: bolder;
+        background-color: #68aa32;
+        color: white;
+      }
+
+      #table-6 {
+        width: 500px;
+        height: 60px;
+        margin: auto;
+        justify-content: center;
+        border-collapse: collapse;
+      }
+      #table-6 td {
+        border: 1px solid black;
+      }
+      .green {
+        border: 3px solid green !important;
+        border-radius: none;
+      }
+
+      #table-7 {
+        margin: auto;
+        justify-content: center;
+        width: 500px;
+      }
+      #table-8 {
+        margin: auto;
+        justify-content: center;
+        width: 500px;
+        /* background-color: grey; */
+        /* color: whitesmoke; */
+      }
+      #table-8 > tbody th {
+        background-color: red;
+        color: white;
+      }
+      #table-10 {
+        margin: auto;
+        justify-content: center;
+        border-collapse: collapse;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+      }
+      #table-10 tr:nth-child(even) {
+        background-color: #68aa32;
+      }
+      #table-10 tr:first-child td {
+        font-weight: 600;
+        background-color: rebeccapurple;
+        color: whitesmoke;
+      }
+      #table-10 td {
+        border: 1px solid black;
+      }
+      #table-11 {
+        margin: auto;
+        justify-content: center;
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+        text-align: center;
+      }
+      #table-11 td {
+        border-right: 1px solid black;
+      }
+      #table-12 {
+        margin: auto;
+        justify-content: center;
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      #table-12 td {
+        padding-left: 5px;
+        border-top: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome To The Table Practice of 12</h1>
+    <br />
+    <hr />
+    <br />
+    1) HTML Table Example-First
+    <table cellpadding="5" id="table-1">
+      <tr>
+        <th>Name</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>English</th>
+        <th>Physics</th>
+        <th>General Knowledge</th>
+      </tr>
+
+      <tr>
+        <td>David</td>
+        <td>85</td>
+        <td>87</td>
+        <td>88</td>
+        <td>92</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>Richard</td>
+        <td>91</td>
+        <td>81</td>
+        <td>78</td>
+        <td>71</td>
+        <td>74</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>81</td>
+        <td>86</td>
+        <td>88</td>
+        <td>84</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>Tony</td>
+        <td>84</td>
+        <td>86</td>
+        <td>87</td>
+        <td>82</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <td>Scott</td>
+        <td>71</td>
+        <td>79</td>
+        <td>82</td>
+        <td>88</td>
+        <td>89</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    2) HTML Table Example-Second
+    <table cellpadding="5" id="table-2">
+      <tbody>
+        <th>Name</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>English</th>
+        <th>Physics</th>
+        <th>General Knowledge</th>
+
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    3) HTML Table Example-Third
+    <table border="1" cellpadding="5" cellspacing="0" id="table-3">
+      <th colspan="6">STUDENTS MARK SHEET</th>
+      <tbody>
+        <th>Name</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>English</th>
+        <th>Physics</th>
+        <th>General Knowledge</th>
+
+        <tr>
+          <td>Pooja</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Vaibhav</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>Kamlesh</td>
+          <td>81</td>
+          <td>85</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Rushi</td>
+          <td>84</td>
+          <td>86</td>
+          <td>88</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Vaibhav</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    4) HTML Table Example-Fourth[4]
+    <table border="1" cellspacing="0" cellpadding="5" id="table-4">
+      <th class="heading-1" colspan="6">STUDENTS MARK SHEET</th>
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+
+        <tr>
+          <td>Raj</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>92</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Kartik</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>Nitin</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Akshay</td>
+          <td>84</td>
+          <td>86</td>
+          <td>88</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Shivam</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    5) HTML Table Example-Fifth [5]
+    <table border="1" cellspacing="0" cellpadding="5" id="table-5">
+      <tbody>
+        <td class="heading-2" colspan="6">STUDENTS MARK SHEET</td>
+        <tr>
+          <td>Name</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>Shri Raj</td>
+          <td>85</td>
+          <td>87</td>
+          <td>88</td>
+          <td>88</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Gayatri</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>71</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>Akash</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Gaurav</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Ashwini</td>
+          <td>74</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    6)HTML Table Example-Sixth [6]
+    <table cellpadding="5" id="table-6">
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="green"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+
+    7)HTML Table Example-Seventh [7]
+    <table id="table-7" border="1" cellspacing="0" cellpadding="5">
+      <tbody>
+        <th>Company</th>
+        <th>Model</th>
+        <tr>
+          <td>Dodge</td>
+          <td>Challanger</td>
+        </tr>
+        <tr>
+          <td>Maruti</td>
+          <td>Switf</td>
+        </tr>
+        <tr>
+          <td>Jeep</td>
+          <td>Wrangler</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Ford</td>
+          <td>Fusion</td>
+        </tr>
+        <tr>
+          <td>Fiesta</td>
+        </tr>
+        <tr>
+          <td>Escape</td>
+        </tr>
+        <tr>
+          <td>BMW</td>
+          <td>BMW 5 Series</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    8)HTML Table Example-Eighth
+    <table border="1" cellspacing="0" cellpadding="5" id="table-8">
+      <tbody>
+        <th>Company</th>
+        <th>Model</th>
+        <tr>
+          <td>Dodge</td>
+          <td>Challanger</td>
+        </tr>
+        <tr>
+          <td>Maruti</td>
+          <td>Switf</td>
+        </tr>
+        <tr>
+          <td>Jeep</td>
+          <td>Wrangler</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            All these car Company names and their model are collected from the
+            internet. You can change and Model Name as per your choice.
+          </td>
+        </tr>
+        <tr>
+          <td>BMW</td>
+          <td>BMW 6 Series/td></td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    9)HTML Table Example-Ninth [9]
+    <table border="1" cellspacing="0" cellpadding="5" id="table-8">
+      <tbody>
+        <th>Comapany</th>
+        <th>Model</th>
+        <tr>
+          <td>Dodge</td>
+          <td>Challanger</td>
+        </tr>
+        <tr>
+          <td>Maruti</td>
+          <td>Switf</td>
+        </tr>
+        <tr>
+          <td>Jeep</td>
+          <td>Wrangler</td>
+        </tr>
+        <tr>
+          <td>Disclaimer</td>
+          <td>
+            All these car Company names and their model names are collected from
+            the internet. You can change comapany and model name as per your
+            choice. All these car Company names and their model names are
+            collected from the internet. You can change comapany and model name
+            as per your choice.
+          </td>
+        </tr>
+        <tr>
+          <td>BMW</td>
+          <td>BMW 5 Series</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    10)HTML Table Example-Tenth
+    <table id="table-10">
+      <tbody>
+        <tr>
+          <td>Sno</td>
+          <td>Fruit Name</td>
+          <td>Quantity</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Orange</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Orange</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Pineapple</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    11)HTML Table Example-Eleveth
+    <table id="table-11">
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>92</td>
+          <td>88</td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>81</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    12)HTML Table Example-Twelfth
+    <table id="table-12">
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>General Knowledge</td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>85</td>
+          <td>87</td>
+          <td>92</td>
+          <td>88</td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <td>Richard</td>
+          <td>91</td>
+          <td>81</td>
+          <td>78</td>
+          <td>81</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>81</td>
+          <td>86</td>
+          <td>88</td>
+          <td>84</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>Tony</td>
+          <td>84</td>
+          <td>86</td>
+          <td>87</td>
+          <td>82</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>71</td>
+          <td>79</td>
+          <td>82</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

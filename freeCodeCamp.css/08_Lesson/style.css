@@ -1,0 +1,30 @@
+body{
+    padding: 5% 10%;
+    font-size: 1.5rem;
+    font-family: sans-serif ;
+}
+ol{
+    list-style: lower-alpha;
+    text-align: center;
+    list-style-position: inside;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: #00f;
+    /* list-style-image:url(./hacker\ Home.avif) ;
+    list-style: square url(./hacker\ Home.avif) inside; */
+}
+ul li:nth-child(odd ){
+    color: red;
+}
+
+::marker{
+    color: green;
+    font-family: fantasy;
+    font-size: 1em;
+    content:"Only $5 >>  " ;
+
+}

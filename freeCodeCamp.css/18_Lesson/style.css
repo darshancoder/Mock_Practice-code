@@ -144,25 +144,21 @@ footer {
 
 /* ||LARGE */
 @media screen and (min-width:992px) {
-    nav{
-        display: none;
-    }
-    .card{
-        width:min(100%,325px) ;
-    }
-    .card figure{
-        flex-flow: column-reverse;
-    }
-
-    .card figcaption{
-        margin: 0.1em 0;
-
-    }
-
-    .card p{
-        margin-top: 1rem;
-    }
+   .card{
+    width: min(100%,400px);
+   }
+   .card:nth-child(2){
+    order: -1;
+   }
     
 }
 
 
+/* || XL */
+@media screen and (min-width:1200px) {
+  .card{
+    width: min(calc(33% - 1rem),500px);
+  }
+  
+  
+}
